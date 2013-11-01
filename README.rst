@@ -55,9 +55,12 @@ Setting it up
 -------------
 Global (same for all projects)::
 
-* git config --global reviewboard.url https://example.com/rb/ (the trailing slash is REQUIRED)
-* git config --global reviewboard.server https://example.com/rb/
+* git config --global reviewboard.url https://dev.salsitasoft.com/rb/ (the trailing slash is REQUIRED)
+* git config --global reviewboard.server https://dev.salsitasoft.com/rb/
 * git config --global gitflow.pt.token 12345678910
+
+**gitflow.pt.token** - Your API Token from PivotalTracker, can be found at https://www.pivotaltracker.com/profile
+
 
 You will be prompted for the project-specific settings during ``git flow init`` or other commands when the need arises.
 
@@ -224,9 +227,9 @@ Demo
 
 A small demo how a complete feature implementation could look like::
 
-    $ git config --global reviewboard.server https://example.com/rb/
-    $ git config --global reviewboard.url https://example.com/rb/
-    $ git config --global workflow.token 0123456789
+    $ git config --global reviewboard.server https://dev.salsitasoft.com/rb/
+    $ git config --global reviewboard.url https://dev.salsitasoft.com/rb/
+    $ git config --global gitflow.pt.token 0123456789
     $ mkdir project
     $ cd project
     $ git remote add origin git@github.com:salsita/project.git
